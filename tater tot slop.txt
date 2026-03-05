@@ -9,13 +9,14 @@ _marinade
 		garlic
 		sesame oil
 
-_shortRibsThin(marinade) {
-		
+_shortRibsThin(marinade)
 
-(part) mayonaise
+_sauce {
+		(part) mayonaise
 less ketchup
 less relish
 tad banditos
+}
 
 tatertots
 

@@ -6,7 +6,7 @@ dutchOven ( medium heat ) {
 				_onion(diced)
 				_redPepper(diced)
 				_cilantroStalks(finelyChopped)
-				_limeLeaves(3)[finelyChopped]
+				_limeLeaves(3){finelyChopped}
 				_lemongrass(stalk)
 				_curryPaste(2-3tbps)
 				_ginger(1inch)

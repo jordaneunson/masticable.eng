@@ -1,41 +1,43 @@
 #!/bin/stroganoff
 
-prepCounter () {
+prepCounter() {
 	_steak() {
 			#wash and trim
 			_seasoning
+	}
 }
 
-largeSkillet (mediumHeat) {
+largeSkillet(mediumHeat) {
 		_oliveOil
-		_butter(2 tbsp)
-		_mushrooms(300G) {sliced}
-		_onion(1large) {diced}
-		_garlic(2 cloves)
+		_butter(2tbsp)
+		_mushrooms(300G){sliced}
+		_onion(1large){diced}
+		_garlic(2cloves)
 		_seasonings
 }
 
-smallPot (lowHeat) {
+smallPot(lowHeat) {
 		_butter(2tbsp)
 		_cream(1/4cup)
-		_sourcream(150ml)
+		_sourCream(150ml)
 		_flour(1tbsp)
 		_cornstarch(to thicken as needed)
+}
 
-largeSkillet (highHeat) {
-		_beefBroth (2cups)
+largeSkillet(highHeat) {
+		_beefBroth(2cups)
 		_bayLeaf
 		#bring to boil then lower heat to simmer
 }
 
 mediumPot(highHeat) {
-		_water (boil)
+		_water(boil)
 		_eggNoodles(enough)
 }
 
 largeSkillet(lowHeat) {
 		add(smallPot)
-		_canPeas(1/2)s
+		_canPeas(1/2)
 		mix()
 }
 
@@ -48,7 +50,7 @@ stoneSkillet(highHeat) {
 		_thyme
 		_garlicClove
 		while(steak != done) {
-				wait(30seconds}
+				wait(30seconds)
 				flip()
 		}
 }
@@ -57,4 +59,3 @@ prepCounter() {
 		_steak(rest)
 		slice()
 }
-		

@@ -1,10 +1,10 @@
 #!/bin/gumbo
 
-smallBowl():	
+smallBowl():
     creoleVeg() {
 		_onion(1){chopped}
-		_celery(2){chopped} 
-		_redPepper(1){chopped)
+		_celery(2){chopped}
+		_redPepper(1){chopped}
 	}
 
 
@@ -21,12 +21,12 @@ dutchOven(mediumHeat):
     roux(_butter(1 cup), _flour(1 cup))
     while(color != dark):
         stir()
-        wait(2mins)    # Looking for the color of an old penny	
+        wait(2mins)    # Looking for the color of an old penny
     _creoleVeg
     _garlic(6 cloves){crushed}
 	_spices()
     _sausages(3, skinless)
-    _chickenThighs(2, skinless, boneless, optional))
+    _chickenThighs(2, skinless, boneless, optional)
     _cannedTomatoes(14oz)
     _chickenBroth(1 quart)
     _beefBroth(1 quart)

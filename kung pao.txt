@@ -1,4 +1,4 @@
-#!/bin/chowmein
+#!/bin/kungpao
 
 mediumPot(highHeat) {
 		_water(boil)
@@ -16,12 +16,13 @@ smallBowl() {
 
 prep() {
 		_steak(1lb){stripped}
-		_broccoli(2 cups) {florets}
-		_carrots(2 cups) {sliced thin}
+		_broccoli(2 cups){florets}
+		_carrots(2 cups){sliced thin}
 		_redPepper(0.5 cup)
 		_redOnion(0.5 cup)
 		_celery(0.5cup)
 		_redChillies(3){de-seeded}
+}
 
 wok(highHeat) {
 		+prep()

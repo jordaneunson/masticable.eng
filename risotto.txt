@@ -1,47 +1,46 @@
-risotto
+#!/bin/risotto
 
-toGetBeforeHand() {}
-        _thymeleaves #pick as many leaves as you can, more than you think
+toGetBeforeHand() {
+        _thymeLeaves #pick as many leaves as you can, more than you think
         _rosemaryBranch(1/2)
         _bayLeaf(2)
-        }
+}
 
-dutchOven(high heat, olive oil)
+dutchOven(highHeat, oliveOil) {
 	fry() {
-       	 blitz ( _whiteOnion(1/2), _celeryStalk, ) # add _spicyHotSausage(1) for brocencheese
-     	   }
-					while ( blitz != soft ) { wait }
+        blitz(_whiteOnion(1/2), _celeryStalk) # add _spicyHotSausage(1) for brocencheese
+	}
+	while(blitz != soft) { wait }
 	stir in {
-       	 _arborioRice
-        	_pinotGris(3/4cup)
-        	}
-        
-dutchOven(medium heat)
-        {
-        add toGetsBeforeHand()
-        }
+        _arborioRice
+        _pinotGris(3/4cup)
+	}
+}
 
-while ( risotto != done )
-        {
-        add veggie broth
+dutchOven(mediumHeat) {
+        add toGetBeforeHand()
+}
+
+while(risotto != done) {
+        add _veggieBroth
         stir
-        if ( risotto = 80% ); then
+        if(risotto == 80%) {
                 addFixings()
         }
+}
 
-addFixings
-        {
-                _butter(1/3cup)
-                _pecorino(1/2cup)
-#               _cheddarCheese(1/2cup) this is only for brocencheese
-                _dicedParsley(handful, very fine)
-                -squeezedLemon(1/2)
-                _seasoning
-                add lid
-                wait(10mins)
-        }
+addFixings() {
+        _butter(1/3cup)
+        _pecorino(1/2cup)
+#       _cheddarCheese(1/2cup) this is only for brocencheese
+        _dicedParsley(handful, very fine)
+        _squeezedLemon(1/2)
+        _seasoning
+        add lid
+        wait(10mins)
+}
 
 dutchOven(noHeat)
 sleep(300)
-        
+
 mouth(:D)

@@ -1,7 +1,7 @@
 #!/bin/trufflecreamcanelloni
 
 fryPan(mediumHeat) {
-		_onion(1/2)(diced)
+		_onion(1/2){diced}
 		_mushrooms(sliced)
 		_truffle(as much as u can afford)
 		_butter(1/3cup)
