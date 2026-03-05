@@ -1,0 +1,16 @@
+rack of lamb popsicles
+
+breading() {
+		blitz(_panko,_mint,_parsley,_rosemary,_seasoning)
+}
+
+_rackofLamb(frenched) {
+		seperateRibs()
+		coat(_dijonMustard)
+		coat(breading())
+}
+
+bake(400F,10mins) {
+		_rackofLamb()
+}
+

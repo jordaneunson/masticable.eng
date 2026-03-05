@@ -1,0 +1,16 @@
+#!/bin/beef_jw_borg
+
+# Prep the tomato base:
+bakeTomatoes() {
+    _tomatoes
+    _garlic
+    _salt
+    _pepper
+    _oliveOil
+}
+blend() { _tomatoPaste }
+
+# Use as base in: 
+slowCooker("Beef Bourguignon") { 
+    recipe: https://therecipecritic.com/2016/11/slow-cooker-beef-bourguignon/
+}

@@ -1,0 +1,22 @@
+tatertotslop
+
+ingredients of ingreidnts are cascading
+
+_marinade
+		red wine vinegar
+		soy
+		ginger 
+		garlic
+		sesame oil
+
+_shortRibsThin(marinade) {
+		
+
+(part) mayonaise
+less ketchup
+less relish
+tad banditos
+
+tatertots
+
+bam()

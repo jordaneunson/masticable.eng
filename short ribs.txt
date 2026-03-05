@@ -1,0 +1,25 @@
+#!/bin/braised_short_rib
+
+# 1lb of shortrib should be 3 3x3 inch pieces, NOT STRIPS
+
+preHeat(oven(300F))
+
+dutchOven(medium-high heat, olive oil) {
+               season,brown(_shortRib(1lb))
+               }
+
+bits() {
+               slice(_onion,_shallot,_garlicClove(3))
+               }
+
+dutchOven(medium heat) {
+               bits()
+               while bits() != soft {
+                       _wine(1/4cup)
+                       _soy(2tbps)
+                       _broth(1/4cup)
+               }
+
+dutchOven(oven(300F))
+
+wait(3hrs)

@@ -1,0 +1,33 @@
+pot(highHeat) {
+        _water(boil)
+        }
+skilletA(highHeat) {    
+        fry() {
+                _oliveOil
+                _mushrooms(sliced)
+                _leek(diced)
+                _garlicClove(2)
+                # fry till no water
+                }
+        _chickenStock
+        }
+_lasagnaSheets(fresh) {
+        slice(lengthways)
+        }
+pot(highHeat) {
+        _lasagnaSheets()
+        }
+skilletA(mediumHeat) {
+        thicken() {
+                _heavyCream(2tbsp)
+                _cornstarch(as-needed)
+                }
+        #remove from heat, add pasta
+        }
+skilletB(highHeat) {
+        _oliveOil
+        _freshBread
+}
+plate() {
+        _freshTarragon
+        }

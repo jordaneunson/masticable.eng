@@ -1,0 +1,35 @@
+meatloaf macaroni
+
+put 7$ worth o'proscuitto roll, the rolly one. With the herbs demarcation between meat and fat
+extract fat from proscuitto, into a pan and cook low, water and lid help when too hot
+
+add ( beef|veal|pork ) & cook
+add wine, wine != prosecco, & fry
+add ( carrot|celery|onion|shallot melange ) & fry
+garlic & fry then {
+	turn up heat to hot
+	whole rosemary
+	bay leaves
+	1 part moms tomato sauce
+	1/2 part classico sauce
+ 	broth
+	while ( taste = poor )
+		season
+	lid
+}
+
+
+wait 30 minutes
+boil 1/2 macaroni 1/2 egg noodles
+turn on over to 300
+al dente, mix to sauce pan
+dump into meatloaf pan
+shred marble atop
+oven till melt
+broil till happy
+let sit 10 mins
+top with {
+	mad salt flakes
+	finely grated parm
+	finely chopped parsley
+}

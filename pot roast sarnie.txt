@@ -1,0 +1,29 @@
+pot roast sarnie
+
+dutchOven(medium-high heat, oil, lid) {
+		_pancetta(150g) { cubed }
+		}
+melange() {
+		blitz(_carrot(2)_celery(2)_onion) { finely }
+}
+
+dutchOven() {
+		remove pancetta
+		brown potRoast
+		remove roast
+		melange(till softened)
+}
+
+dutchOven(high heat) {
+		pancetta
+		_can of tomatoes(14oz)
+		_garlic
+		_rosemary
+		_oregano
+		mix()
+		potRoast
+}
+
+dutchOven(bake 300F)
+
+sleep 3hrs
