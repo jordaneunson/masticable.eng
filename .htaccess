@@ -1,0 +1,7 @@
+# Only allow .txt and .json files to be served
+<FilesMatch "\.(?!txt$|json$)">
+    Deny from all
+</FilesMatch>
+
+# Block directory listing
+Options -Indexes
