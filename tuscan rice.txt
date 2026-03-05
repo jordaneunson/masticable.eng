@@ -1,3 +1,4 @@
+#!/bin/gastro
 removeSkin(){
         _sausages(1 per person)
         }

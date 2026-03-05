@@ -1,3 +1,4 @@
+#!/bin/gastro
 pot(highHeat) {
         _water(boil)
         }

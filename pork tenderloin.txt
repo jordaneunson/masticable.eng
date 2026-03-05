@@ -1,3 +1,4 @@
+#!/bin/gastro
 largeZipLock(fridge) {
 		_porkTenderloin(0.5kg)
 		_italianSaladDressing(some)
