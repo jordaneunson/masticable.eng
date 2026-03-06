@@ -1,17 +1,28 @@
 #!/bin/gastro
-rack of lamb popsicles
+
+oven(400F) {
+    preheat
+}
 
 breading() {
-    blitz(_panko,_mint,_parsley,_rosemary,_seasoning)
+    _panko
+    _mint
+    _parsley
+    _rosemary
+    _seasoning
+    blitz
 }
 
-_rackofLamb(frenched) {
-    seperateRibs()
-    coat(_dijonMustard)
-    coat(breading())
+prepCounter() {
+    _rackOfLamb{frenched}
+    separate: ribs
+    coat: _dijonMustard
+    coat: breading()
 }
 
-bake(400F,10mins) {
-    _rackofLamb()
+oven(400F) {
+    add: _rackOfLamb
+    bake: 10mins
 }
 
+serve

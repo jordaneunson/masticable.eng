@@ -1,7 +1,7 @@
 #!/bin/gastro
 
-_dressing() {
-    _mayonnaise(1/2 cup)
+dressing() {
+    _mayonnaise(1/2cup)
     _whiteWineVinegar(3tbsp)
     _appleCiderVinegar(2tbsp)
     _canolaOil(2tbsp)
@@ -12,12 +12,17 @@ _dressing() {
     _celerySeed(1/2tsp)
     _mustard(1tsp){Dijon}
 }
-_coleslaw() {
-    _cabbage(4 cups){shredded}
+
+prepCounter() {
+    _cabbage(4cups){shredded}
     _carrot(1){shredded}
     _redOnion(1/4){sliced thin}
 }
 
-_mix() {
-    _coleslaw ++ _dressing
+largeBowl() {
+    add: prepCounter()
+    add: dressing()
+    toss
 }
+
+serve

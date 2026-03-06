@@ -1,47 +1,46 @@
 #!/bin/gastro
-
 # Best eaten on cold days with warm fresh thick bread, like an olive loaf or focaccia.
 
 dutchOven(highHeat) {
-    _oliveOil
-    _chickenThighs(4) {skin down}
+    add: _oliveOil
+    add: _chickenThighs(4){skin down}
+    sear: _chickenThighs
+    remove: _chickenThighs
 }
 
-largeBowl(prep) {
-    _onion(1) {diced}
-    _garlic(6) {crushed}
-    _largeCarrot(1) {sliced}
-    _redPepper(1) {diced}
-    _greenPepper(1) {diced}
-    _mushrooms(300g) {crushed}
+prepCounter() {
+    _onion(1){diced}
+    _garlic(6){crushed}
+    _largeCarrot(1){sliced}
+    _redPepper(1){diced}
+    _greenPepper(1){diced}
+    _mushrooms(300g){crushed}
 }
 
 dutchOven(mediumHeat) {
-    remove(_chickenThighs)
-    _oliveOil
-    cookTillSoft() {
-    add(largeBowl)
-    _thyme(8sprigs) {tied together}
-    _basil(2tbsp) {diced}
-    _parsley(2tbsp) {diced}
-    _driedOregano(1tsp)
-    }
-    _redWine(150ml)
-    scrapeBottom()
-    _crushedTomatoes(28oz can)
-    _tomatoPaste(1 can)
-    _romaTomatoes(4) {quartered}
-    _redPepperFlakes(1/2tsp) {optional}
-    _seasoning
-    return(_chickenThighs) {skin up}
+    add: _oliveOil
+    add: prepCounter()
+    add: _thyme(8sprigs){tied together}
+    add: _basil(2tbsp){diced}
+    add: _parsley(2tbsp){diced}
+    add: _driedOregano(1tsp)
+    cook: tillSoft
+    add: _redWine(150ml)
+    deglaze
+    add: _crushedTomatoes(28oz)
+    add: _tomatoPaste(1can)
+    add: _romaTomatoes(4){quartered}
+    add: _redPepperFlakes(1/2tsp)
+    add: _seasoning
+    add: _chickenThighs{skin up}
 }
 
-dutchOven(375F) {
-    lidOn()
-    wait(50mins)
-    lidOff()
-    _blackOlives(small can) {sliced}
-    wait(20mins) # Until the chicken is tender and falling off the bone.
+dutchOven(375F, lidOn) {
+    wait: 50mins
+    remove: lid
+    add: _blackOlives(small can){sliced}
+    wait: 20mins
+    # Until the chicken is tender and falling off the bone.
 }
 
-garnish(_basil, _parsley)
+garnish: _basil, _parsley

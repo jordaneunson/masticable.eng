@@ -1,18 +1,26 @@
 #!/bin/gastro
 
-fryPan(mediumHeat) {
-    _onion(1/2){diced}
-    _mushrooms(sliced)
-    _truffle(as much as u can afford)
-    _butter(1/3cup)
-    _creamo(1/2litre)
-    _cornstarch
-    _seasoning
+oven(350F) {
+    preheat
 }
 
-bakePan(350F) {
-    add a layer of sauce
-    place in cannelonis
-    cover in sauce
-    bake 20mins
+fryPan(mediumHeat) {
+    add: _onion(1/2){diced}
+    add: _mushrooms{sliced}
+    add: _truffle(as much as u can afford)
+    add: _butter(1/3cup)
+    cook: tillSoft
+    add: _cream(1/2litre)
+    add: _cornstarch
+    add: _seasoning
+    stir: untilThickened
 }
+
+bakePan(oven, 350F) {
+    layer: _sauce
+    add: _cannelonis
+    cover: _sauce
+    bake: 20mins
+}
+
+serve

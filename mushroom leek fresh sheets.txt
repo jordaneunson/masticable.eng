@@ -1,34 +1,42 @@
 #!/bin/gastro
-pot(highHeat) {
-    _water(boil)
-    }
-skilletA(highHeat) {    
-    fry() {
-        _oliveOil
-        _mushrooms(sliced)
-        _leek(diced)
-        _garlicClove(2)
-        # fry till no water
-        }
-    _chickenStock
-    }
-_lasagnaSheets(fresh) {
-    slice(lengthways)
-    }
-pot(highHeat) {
-    _lasagnaSheets()
-    }
-skilletA(mediumHeat) {
-    thicken() {
-        _heavyCream(2tbsp)
-        _cornstarch(as-needed)
-        }
-    #remove from heat, add pasta
-    }
-skilletB(highHeat) {
-    _oliveOil
-    _freshBread
+
+largePot(highHeat) {
+    add: _water
+    boil
 }
-plate() {
-    _freshTarragon
-    }
+
+skillet(highHeat) {
+    add: _oliveOil
+    add: _mushrooms{sliced}
+    add: _leek{diced}
+    add: _garlicClove(2)
+    fry: tillDry
+    # fry till no water
+    add: _chickenStock
+}
+
+prepCounter() {
+    _lasagnaSheets(fresh)
+    slice: lengthways
+}
+
+largePot(highHeat) {
+    add: _lasagnaSheets
+    cook: alDente
+}
+
+skillet(mediumHeat) {
+    add: _heavyCream(2tbsp)
+    add: _cornstarch(as needed)
+    thicken
+    # remove from heat
+    add: _lasagnaSheets
+}
+
+fryPan(highHeat) {
+    add: _oliveOil
+    add: _freshBread
+    fry: tillCrispy
+}
+
+garnish: _freshTarragon

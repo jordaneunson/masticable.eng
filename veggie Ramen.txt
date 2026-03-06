@@ -1,25 +1,27 @@
 #!/bin/gastro
 # yumyum veggie ramen
-# 09/29/2021 porkBun() inspired, tested on theDread()
+# inspired by porkBun(), tested on theDread()
 
 smallStockPot(lowHeat) {
-    _campbellsPhoBroth(quart)
+    add: _campbellsPhoBroth(quart)
+    simmer
 }
 
 smallFryPan(mediumHeat) {
-            _oliveOil
-            _ginger
-            _garlics
-            _leek(1/2) { trimmed, quartered, cleaned }
-            _mushrooms(toMatch) {torn}
+    add: _oliveOil
+    add: _ginger
+    add: _garlic
+    add: _leek(1/2){trimmed, quartered, cleaned}
+    add: _mushrooms(to match){torn}
+    fry: tillSoft
 }
 
 smallStockPot(lowHeat) {
-            # add the contents of smallFryPan
-            # spin the broth
-            _chingChong"4"ChingChong(2packets)
-            _egg(2)
-            _brocolliCrowns(toMatch)
+    add: smallFryPan()
+    stir
+    add: _ramenNoodles(2packets)
+    add: _eggs(2)
+    add: _broccoliCrowns(to match)
 }
 
-
+serve

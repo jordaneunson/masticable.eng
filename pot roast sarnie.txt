@@ -1,30 +1,38 @@
 #!/bin/gastro
-pot roast sarnie
 
-dutchOven(medium-high heat, oil, lid) {
-    _pancetta(150g) { cubed }
-    }
+dutchOven(mediumHighHeat) {
+    add: _oil
+    add: _pancetta(150g){cubed}
+    fry: tillCrispy
+    remove: _pancetta
+}
+
 melange() {
-    blitz(_carrot(2)_celery(2)_onion) { finely }
+    _carrot(2){blitzed finely}
+    _celery(2){blitzed finely}
+    _onion{blitzed finely}
 }
 
-dutchOven() {
-    remove pancetta
-    brown potRoast
-    remove roast
-    melange(till softened)
+dutchOven(mediumHighHeat) {
+    add: _potRoast
+    brown: allSides
+    remove: _potRoast
+    add: melange()
+    cook: tillSoftened
 }
 
-dutchOven(high heat) {
-    pancetta
-    _can of tomatoes(14oz)
-    _garlic
-    _rosemary
-    _oregano
-    mix()
-    potRoast
+dutchOven(highHeat) {
+    add: _pancetta
+    add: _cannedTomatoes(14oz)
+    add: _garlic
+    add: _rosemary
+    add: _oregano
+    mix
+    add: _potRoast
 }
 
-dutchOven(bake 300F)
+dutchOven(oven, 300F) {
+    wait: 3hrs
+}
 
-sleep 3hrs
+serve

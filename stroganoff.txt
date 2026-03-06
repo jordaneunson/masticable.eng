@@ -1,61 +1,67 @@
 #!/bin/gastro
 
 prepCounter() {
-    _steak() {
-        #wash and trim
-        _seasoning
-    }
+    _steak
+    # wash and trim
+    season: _steak
 }
 
 largeSkillet(mediumHeat) {
-    _oliveOil
-    _butter(2tbsp)
-    _mushrooms(300G){sliced}
-    _onion(1large){diced}
-    _garlic(2cloves)
-    _seasonings
+    add: _oliveOil
+    add: _butter(2tbsp)
+    add: _mushrooms(300g){sliced}
+    add: _onion(1large){diced}
+    add: _garlic(2cloves)
+    add: _seasonings
+    cook: tillSoft
 }
 
 smallPot(lowHeat) {
-    _butter(2tbsp)
-    _cream(1/4cup)
-    _sourCream(150ml)
-    _flour(1tbsp)
-    _cornstarch(to thicken as needed)
+    add: _butter(2tbsp)
+    add: _cream(1/4cup)
+    add: _sourCream(150ml)
+    add: _flour(1tbsp)
+    add: _cornstarch(to thicken as needed)
+    stir: untilSmooth
 }
 
 largeSkillet(highHeat) {
-    _beefBroth(2cups)
-    _bayLeaf
-    #bring to boil then lower heat to simmer
+    add: _beefBroth(2cups)
+    add: _bayLeaf
+    # bring to boil then lower heat to simmer
+    simmer
 }
 
 mediumPot(highHeat) {
-    _water(boil)
-    _eggNoodles(enough)
+    add: _water
+    boil
+    add: _eggNoodles(enough)
+    cook: alDente
 }
 
 largeSkillet(lowHeat) {
-    add(smallPot)
-    _canPeas(1/2)
-    mix()
+    add: smallPot()
+    add: _canPeas(1/2)
+    mix
 }
 
 stoneSkillet(highHeat) {
-    _oliveOil
-    _steak
-    wait(30seconds)
-    flip()
-    _butter
-    _thyme
-    _garlicClove
-    while(steak != done) {
-        wait(30seconds)
-        flip()
+    add: _oliveOil
+    add: _steak
+    wait: 30seconds
+    flip
+    add: _butter
+    add: _thyme
+    add: _garlicClove
+    while (steak != done) {
+        wait: 30seconds
+        flip
     }
 }
 
 prepCounter() {
-    _steak(rest)
-    slice()
+    rest: _steak
+    slice
 }
+
+serve

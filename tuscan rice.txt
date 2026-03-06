@@ -1,33 +1,37 @@
 #!/bin/gastro
-removeSkin(){
+
+prepCounter() {
     _sausages(1 per person)
-    }
-
-
-dutchOven(mediumHeat) {
-    fry(till soft) {
-        _oliveoil(1tsp)
-        _redOnion(chopped fine)
-        _redPepper(diced)
-        _garlicClove(2)
-    }
-} 
-
-dutchOven(highHeat) {
-    #make a well in the middle
-    _sausages(crumbled)
-    #stir quickly
-    _paprika
-    blast(_rice) {30 seconds}
-    _whiteWine
-    _broth
+    remove: skin
 }
 
-dutchOven(simmer) {12-15mins}
+dutchOven(mediumHeat) {
+    add: _oliveOil(1tsp)
+    add: _redOnion{chopped fine}
+    add: _redPepper{diced}
+    add: _garlicClove(2)
+    cook: tillSoft
+}
+
+dutchOven(highHeat) {
+    # make a well in the middle
+    add: _sausages{crumbled}
+    brown
+    add: _paprika
+    add: _rice
+    fry: 30seconds
+    add: _whiteWine
+    add: _broth
+}
+
+dutchOven(lowHeat) {
+    simmer: 12-15mins
+}
+
 dutchOven(noHeat) {
-    addFresh() {
-        _green onions
-        _tomatoes(chopped, no seeds)
-        _flat leaf parsley
-        }
-    }
+    add: _greenOnions
+    add: _tomatoes{chopped, no seeds}
+    add: _flatLeafParsley
+}
+
+serve

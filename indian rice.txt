@@ -1,28 +1,28 @@
 #!/bin/gastro
 
 smallPot(mediumHeat) {
-    cascadingFry() {
-        _butter(shepow)
-        _oil(someGlugs)
-        soften(_yellowOnion(diced))
-        _garlic(3cloves)
-        _ginger(shredded)
-        _cardamom(tsp) #no
-        _coriander(stalks)
-        _turmeric(tsp)
-        _cumin(tsp) #no
-        _garamMasla(tsp) #no
-        _cayenne(splash) #less is more here. we're dying 
-        _seasoning(totaste)
-        }
-    _rice(1cup)
-    _veggieBroth(1cup)
-    _water(1cup)
+    # cascading fry — add each ingredient in order
+    add: _butter(shepow)
+    add: _oil(someGlugs)
+    add: _yellowOnion{diced}
+    cook: tillSoft
+    add: _garlic(3cloves)
+    add: _ginger{shredded}
+    add: _cardamom(tsp)
+    add: _coriander(stalks)
+    add: _turmeric(tsp)
+    add: _cumin(tsp)
+    add: _garamMasala(tsp)
+    add: _cayenne(splash)
+    # less is more here. we're dying
+    add: _seasoning(to taste)
+    add: _rice(1cup)
+    add: _veggieBroth(1cup)
+    add: _water(1cup)
 }
 
-smallPot(lowHeat) {
-    lid
+smallPot(lowHeat, lidOn) {
+    wait: tillDone
 }
 
-
-        
+serve

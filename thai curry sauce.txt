@@ -1,29 +1,32 @@
 #!/bin/gastro
 
-dutchOven ( medium heat ) {
-    tillSoft() {
-        _oliveOil(glugs)
-        _onion(diced)
-        _shallot(diced)
-        _cilantroStalks(finelyChopped)
-        _limeLeaves(finelyChopped)
-        _ginger(1inch)
-        _garlicCloves(minced)
-    }
-    _curryPaste(2-3tbps) #use AROY-D panang
-    _chickenStock(1/4-1/2cup)
-    _coconutMilk(1can)
-    _coconutCream(1/2can)
-    _fishSauce(1tbsp)
-    _seasameOil(dabdab)
+dutchOven(mediumHeat) {
+    add: _oliveOil(glugs)
+    add: _onion{diced}
+    add: _shallot{diced}
+    add: _cilantroStalks{finely chopped}
+    add: _limeLeaves{finely chopped}
+    add: _ginger(1inch)
+    add: _garlicCloves{minced}
+    cook: tillSoft
+    add: _curryPaste(2-3tbsp)
+    # use AROY-D panang
+    add: _chickenStock(1/4-1/2cup)
+    add: _coconutMilk(1can)
+    add: _coconutCream(1/2can)
+    add: _fishSauce(1tbsp)
+    add: _sesameOil(dabdab)
+    simmer
 }
 
-makeRice()
+# make rice on the side
 
-fryPan (highHeat) {
-    _oliveOil(5glugs)
-    _curryPaste(oneSquish)
-    _chickenSlices
-    _frozenShrimps
+fryPan(highHeat) {
+    add: _oliveOil(5glugs)
+    add: _curryPaste(oneSquish)
+    add: _chickenSlices
+    add: _frozenShrimp
+    cook: tillDone
 }
 
+serve

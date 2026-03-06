@@ -1,20 +1,25 @@
 #!/bin/gastro
 
-dutchOven(mediumheat) {
-    _baconStrips
-    _onion(1){blitzed}
-    _celery(1){blitzed}
-    _leek(1){chopped} [optional]
+dutchOven(mediumHeat) {
+    add: _baconStrips
+    fry: tillCrispy
+    add: _onion(1){blitzed}
+    add: _celery(1){blitzed}
+    add: _leek(1){chopped}
+    # leek is optional
+    cook: tillSoft
 }
 
 dutchOven(highHeat) {
-    _russetPotatoes(1lbs){cubed}
-    _chickenStock(toCover)
-    _bayLeaf(2)
+    add: _russetPotatoes(1lbs){cubed}
+    add: _chickenStock(to cover)
+    add: _bayLeaf(2)
+    boil
 }
 
 dutchOven(lowHeat) {
-    _heavyCream(250ml)
+    add: _heavyCream(250ml)
+    simmer
 }
 
-serve with cheddar cheese and chives
+garnish: _cheddarCheese, _chives

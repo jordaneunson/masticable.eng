@@ -1,65 +1,70 @@
 #!/bin/gastro
-
-# 20200402 Notes:
+# Notes:
 # - Improve rice.
 # - Heavy cream: 250ml too small.
 # - Honey is important for final flavor.
 # - BBQ the chicken on a stick—better.
 
-bowl() {
-    yogurtMixture() {
-    paste { _garlic(4) _ginger(1") _greenChili(0.5) }
-    _yogurt(4tbsp)
-    _flour(1tbsp)
+paste() {
+    _garlic(4)
+    _ginger(1")
+    _greenChili(0.5)
+}
+
+marinade() {
+    add: paste()
+    add: _yogurt(4tbsp)
+    add: _flour(1tbsp)
     mix
-    }
+    add: _coriander(1tsp)
+    add: _cumin(1tsp)
+    add: _cinnamon(pinch)
+    add: _redChili(2tsp)
+    add: _saffron(pinch)
 }
 
-addSpice(yogurtMixture) {
-    _coriander(1tsp)
-    _cumin(1tsp)
-    _cinnamon(pinch)
-    _redChili(2tsp)
-    _saffron(pinch)
+prepCounter() {
+    _chickenBreasts(2){sliced}
+    coat: marinade()
 }
 
-chickenBreasts(2) {     
-    slice
-    yogurtMixture()
+fridge() {
+    wait: 2hrs
 }
 
-fridge(2hrs) # Marinate for 2 hours.
+# ---- 2 Hours Later ----
 
-#### 2 Hours Later #####
-
-BBQ(highHeat)
+bbq(highHeat) {
+    cook: _chicken
+    # Turn often, want charring. Don't burn.
+}
 
 gravyPot(mediumLowHeat) {
-    melt() { _butter(cube) }
-    _fenugreek(25seeds) | _driedFenugreekLeaves() # Leaves are better.
-    _greenCardamom(6 pods | 54 seeds)
-    _cloves(5)
-    _cinnamonStick(piece)
-    _ginger(1/2 inch)
-    _chili(1/2)
-
-    wait(10mins)
-
-    _onion(1/2) # Do not brown.
-    _corianderPowder(1tsp)
-    _chiliPowder(1tsp heaping)
-    _tomatoPaste(3 heaps) # Trying jar... 250ml cream was too much.
-
-    _doubleCream | _heavyCream
-    _honey
-    _freshCorianderStalks
-    _salt(pinch)
-    _lemon(squeeze)
-
-    keep(3/10)
+    add: _butter(cube)
+    melt
+    add: _fenugreek(25seeds)
+    # _driedFenugreekLeaves are better
+    add: _greenCardamom(6pods)
+    add: _cloves(5)
+    add: _cinnamonStick(piece)
+    add: _ginger(1/2inch)
+    add: _chili(1/2)
+    wait: 10mins
+    add: _onion(1/2)
+    # Do not brown.
+    add: _corianderPowder(1tsp)
+    add: _chiliPowder(1tsp){heaping}
+    add: _tomatoPaste(3heaps)
+    add: _doubleCream
+    add: _honey
+    add: _freshCorianderStalks
+    add: _salt(pinch)
+    add: _lemon(squeeze)
+    simmer: 3/10
 }
 
-bbqChicken() # Turn often, want charring. Don’t burn.
+gravyPot(lowHeat) {
+    add: _chicken
+}
 
-addChicken(gravyPot)
-serveOverRice()
+serve: overRice

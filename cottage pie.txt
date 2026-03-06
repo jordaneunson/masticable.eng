@@ -1,43 +1,43 @@
 #!/bin/gastro
 
-fryingPan(highHeat) {
-    _groundBeef(340g)
-    _whiteMushrooms(5-6)
-    mashIngredients()
+oven(400F) {
+    preheat
 }
 
-peelPotatoes() {
-    _russetPotatoes(4)
+fryingPan(highHeat) {
+    add: _groundBeef(340g)
+    add: _whiteMushrooms(5-6)
+    brown
 }
 
 fryingPan(mediumHeat) {
-    _guinness{deglaze}
-    _carrot(1/2){minced}
-    _onion(1/2){minced}
-    _garlic(5cloves){crushed}
-    _rosemary
-    _thyme
-    _worcestershireSauce
-    _chickenBroth(1cup)
-    # change to lowHeat
+    deglaze: _guinness
+    add: _carrot(1/2){minced}
+    add: _onion(1/2){minced}
+    add: _garlic(5cloves){crushed}
+    add: _rosemary
+    add: _thyme
+    add: _worcestershireSauce
+    add: _chickenBroth(1cup)
+    simmer: lowHeat
 }
-
-oven(400C) {}
 
 largePot(highHeat) {
-    _potatoes(4){peeled}
-    mash() {
-    _butter
-    _milk
-    _parm
-    }
+    add: _russetPotatoes(4){peeled}
+    boil: tillSoft
+    mash
+    add: _butter
+    add: _milk
+    add: _parm
 }
 
-casseroleDish {
-    layer() {
-    _fryingPan
-    _largePot
-    }
+casseroleDish() {
+    layer: _fryingPan
+    layer: _largePot
 }
 
-bakeCottagePie()
+oven(400F) {
+    bake: tillGolden
+}
+
+serve

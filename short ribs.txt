@@ -1,26 +1,30 @@
 #!/bin/gastro
+# 1lb of shortrib should be 3x3-inch pieces, NOT STRIPS.
 
-# 1lb of shortrib should be 3 3x3 inch pieces, NOT STRIPS
-
-preHeat(oven(300F))
-
-dutchOven(medium-high heat, olive oil) {
-               season,brown(_shortRib(1lb))
+oven(300F) {
+    preheat
 }
 
-bits() {
-               slice(_onion,_shallot,_garlicClove(3))
+dutchOven(mediumHighHeat) {
+    add: _oliveOil
+    add: _shortRib(1lb){seasoned}
+    sear: allSides
+    remove: _shortRib
 }
 
-dutchOven(medium heat) {
-               bits()
-               while bits() != soft {
-                       _wine(1/4cup)
-                       _soy(2tbsp)
-                       _broth(1/4cup)
-               }
+dutchOven(mediumHeat) {
+    add: _onion{sliced}
+    add: _shallot{sliced}
+    add: _garlicClove(3){sliced}
+    cook: tillSoft
+    add: _wine(1/4cup)
+    add: _soy(2tbsp)
+    add: _broth(1/4cup)
+    add: _shortRib
 }
 
-dutchOven(oven(300F))
+dutchOven(oven, 300F) {
+    wait: 3hrs
+}
 
-wait(3hrs)
+serve

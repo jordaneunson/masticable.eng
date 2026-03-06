@@ -1,14 +1,6 @@
 #!/bin/gastro
 
-_potatoSalad() {
-    _potatoes(1kg){cubed, boiled until tender}
-    _bacon(6 slices){cooked, crumbled}
-    _redOnion(1/2){diced}
-    _freshParsley(2tbsp){chopped}
-
-}
-
-_dressing() {
+dressing() {
     _baconDrippings(2tbsp)
     _dijonMustard(2tbsp)
     _appleCiderVinegar(3tbsp)
@@ -17,6 +9,17 @@ _dressing() {
     _blackPepper(1/2tsp)
 }
 
-_mix() {
-    _potatoSalad ++ _dressing ++  _freshParsley
+prepCounter() {
+    _potatoes(1kg){cubed, boiled until tender}
+    _bacon(6slices){cooked, crumbled}
+    _redOnion(1/2){diced}
 }
+
+largeBowl() {
+    add: prepCounter()
+    add: dressing()
+    add: _freshParsley(2tbsp){chopped}
+    toss
+}
+
+serve

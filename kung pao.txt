@@ -1,10 +1,6 @@
 #!/bin/gastro
 
-mediumPot(highHeat) {
-    _water(boil)
-}
-
-smallBowl() {
+soyMix() {
     _garlic(4){crushed}
     _ginger(2"){grated}
     _sesameOil(2tbsp)
@@ -16,25 +12,28 @@ smallBowl() {
 
 prep() {
     _steak(1lb){stripped}
-    _broccoli(2 cups){florets}
-    _carrots(2 cups){sliced thin}
-    _redPepper(0.5 cup)
-    _redOnion(0.5 cup)
+    _broccoli(2cups){florets}
+    _carrots(2cups){sliced thin}
+    _redPepper(0.5cup)
+    _redOnion(0.5cup)
     _celery(0.5cup)
     _redChillies(3){de-seeded}
 }
 
+mediumPot(highHeat) {
+    add: _water
+    boil
+}
+
 wok(highHeat) {
-    +prep()
-    cook(3mins)
-    +smallBowl()
+    add: prep()
+    cook: 3mins
+    add: soyMix()
 }
 
 mediumPot(highHeat) {
-    _chowMeinNoodles
+    add: _chowMeinNoodles
+    cook: alDente
 }
 
-garnish {
-    _cilantro
-    _peanuts
-}
+garnish: _cilantro, _peanuts

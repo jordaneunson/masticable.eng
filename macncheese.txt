@@ -1,30 +1,37 @@
 #!/bin/gastro
 
-oven(350F) {}
+oven(350F) {
+    preheat
+}
+
 mediumPot(highHeat) {
-    _macaroni(pull at 85%)
+    add: _macaroni
+    cook: 85%
+    # pull early, it'll keep cooking in the oven
+    drain
 }
 
 smallPot(mediumHeat) {
-    roux() {
-    _butter(1/2cup)
-    _flour(1/2cup)
-    stir(){15mins}
-    }
-    _cheese(1/2cup){variousTypes}
-    flavourNugget(crushedandmixed) {
-    _garlic(2cloves)
-    _rosemary
-    _oregano
-    }
+    add: _butter(1/2cup)
+    add: _flour(1/2cup)
+    stir: 15mins
+    # this is the roux
+    add: _cheese(1/2cup){variousTypes}
+    add: _garlic(2cloves){crushed}
+    add: _rosemary
+    add: _oregano
+    stir: untilMelted
 }
 
 casseroleDish() {
-    mediumPot()
-    smallPot()
-    mix()
-    _cheese(lots){shredded}
+    add: mediumPot()
+    add: smallPot()
+    mix
+    top: _cheese(lots){shredded}
 }
-    
-bake()
-eat()
+
+oven(350F) {
+    bake: tillGolden
+}
+
+serve

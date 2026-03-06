@@ -1,17 +1,16 @@
 #!/bin/gastro
 
-_sauce() {
-    blend() {
+sauce() {
     _feta(4oz)
-    _garlic(8){cloves}
-    _greekYogurt(1/2 cup){low fat}
+    _garlic(8cloves)
+    _greekYogurt(1/2cup){low fat}
     _water(splash)
     _salt(big pinch)
     _oliveOil(1tbsp)
-    }
+    blend
 }
 
-_veg() {
+veg() {
     _cucumber(1/2){sliced thin}
     _redOnion(1/2){sliced thin}
     _freshOregano(1tsp)
@@ -21,22 +20,28 @@ _veg() {
     _redWineVinegar(1tbsp)
 }
 
-_steak() {
-    _rub() {
+rub() {
     _pepper
     _paprika
     _coriander
     _cumin
     _salt
-    }
+}
+
+prepCounter() {
+    _steak(1)
+    coat: rub()
 }
 
 castIron(highHeat) {
-    _oil(1tbsp)
-    _steak(1)
-    _pita(1) or _tacos(1)
+    add: _oil(1tbsp)
+    add: _steak
+    cook: tillDone
 }
 
-_plate() {
-    _pita ++ _steak() ++ _veg() ++ _sauce()
+plate {
+    add: _pita || _tacos
+    add: _steak{sliced}
+    add: veg()
+    add: sauce()
 }

@@ -1,37 +1,38 @@
 #!/bin/gastro
 
-dutchOven ( medium heat ) {
-    tillSoft()  {
-        _oliveOil(glugs)
-        _onion(diced)
-        _redPepper(diced)
-        _cilantroStalks(finelyChopped)
-        _limeLeaves(3){finelyChopped}
-        _lemongrass(stalk)
-        _curryPaste(2-3tbps)
-        _ginger(1inch)
-        _garlic(3)
-        }
-    _chickenStock(1box)
-    _coconutMilk(1can)
-    _coconutCream(if too spicy)
-    _soySauce(totaste)
-    _fishSauce(1tbsp)
-    _brownSugar(totaste)
+dutchOven(mediumHeat) {
+    add: _oliveOil(glugs)
+    add: _onion{diced}
+    add: _redPepper{diced}
+    add: _cilantroStalks{finely chopped}
+    add: _limeLeaves(3){finely chopped}
+    add: _lemongrass(stalk)
+    add: _curryPaste(2-3tbsp)
+    add: _ginger(1inch)
+    add: _garlic(3)
+    cook: tillSoft
+    add: _chickenStock(1box)
+    add: _coconutMilk(1can)
+    add: _coconutCream(if too spicy)
+    add: _soySauce(to taste)
+    add: _fishSauce(1tbsp)
+    add: _brownSugar(to taste)
+    simmer
 }
 
-extra points if you take all the shitty veg from the fridge and put it in the soup base at this stage. 
+# extra points if you take all the shitty veg from the
+# fridge and put it in at this stage
 
-pot (high heat) {
-    _boilWater
-    _riceNoodles
+largePot(highHeat) {
+    add: _water
+    boil
+    add: _riceNoodles
+    cook: alDente
 }
 
-build a soup
-    _shreddedChicken
-    _cilantro(chopped)
-    _greenOnions
-    _limeJuice
-
-
-
+plate {
+    add: _riceNoodles
+    add: _soup
+    add: _shreddedChicken
+    garnish: _cilantro{chopped}, _greenOnions, _limeJuice
+}

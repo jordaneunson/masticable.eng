@@ -1,33 +1,35 @@
 #!/bin/gastro
+
 dutchOven(mediumLowHeat) {
-    render() {
-    _baconFat
-    _butter
-    }
-    _onion(2medium){minced}
-    _cumin(3tsp)
-    _paprika(2tbsp)
-    _fennelSeeds(12)
-    _garlicCloves(4){crushed}
+    add: _baconFat
+    add: _butter
+    render
+    add: _onion(2medium){minced}
+    add: _cumin(3tsp)
+    add: _paprika(2tbsp)
+    add: _fennelSeeds(12)
+    add: _garlicCloves(4){crushed}
+    cook: tillSoft
 }
 
-smallBowl {
+smallBowl() {
     _stewBeef(1.5lbs)
     _flour
-    toss()
+    toss
 }
 
 dutchOven(mediumLowHeat) {
-    add(smallBowl)
-    _redWine
-    _cannedTomatoes(8oz)
-    _beefBroth(2cups)
-    _bayLeaves
-    # Optional
-    _carrots(1.5cups){sliced}
-    _potatoes(3cups){biteSized}
+    add: smallBowl()
+    add: _redWine
+    add: _cannedTomatoes(8oz)
+    add: _beefBroth(2cups)
+    add: _bayLeaves
+    # Optional:
+    add: _carrots(1.5cups){sliced}
+    add: _potatoes(3cups){biteSized}
 }
 
 # 90 mins cook time, lower the better
 # Serve with fresh bread
-# Garnish with dill, green onion, sour cream
+
+garnish: _dill, _greenOnion, _sourCream

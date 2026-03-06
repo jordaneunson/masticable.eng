@@ -1,59 +1,48 @@
 #!/bin/gastro
-# 
 # feeds 2 people with other dishes
-# 20201220 - v0.1
-# 20201220 - v0.2 added acid at end
 
-declare theRice {
+prepCounter() {
     _brownRice(2/3cup)
-    rince(theRice)
-    soak(theRice) {
-    wait(30mins)  {skip ahead}
-    }
+    rinse: _brownRice
+    soak: 30mins
 }
 
-dutchOven(mediumhigh heat) {
-    _oliveoil(2glug)
-    _onion(1/3){diced}
-    _wobblySausage(1){crumbled}
-    _garlicClove(2){mooshed}
-    _paprika(6poofs)
-    _cumin(6crinkles)
-    _cilantroStalks(some chops)
-    _salt(12shakes)
-    meld()
+dutchOven(mediumHighHeat) {
+    add: _oliveOil(2glugs)
+    add: _onion(1/3){diced}
+    add: _wobblySausage(1){crumbled}
+    add: _garlicClove(2){mooshed}
+    add: _paprika(6poofs)
+    add: _cumin(6crinkles)
+    add: _cilantroStalks(some chops)
+    add: _salt(12shakes)
+    cook: tillMelded
 }
 
-dutchOven(high heat) {
-    deglaze(_pinotGris){}
-    $theRice
-    _tomatoCan(1/2)
-    _water
+dutchOven(highHeat) {
+    deglaze: _pinotGris
+    add: _brownRice
+    add: _tomatoCan(1/2)
+    add: _water
 }
 
-dutchOven(lowHeat lidOn) {
-    while rice != cooked {
+dutchOven(lowHeat, lidOn) {
+    while (rice != cooked) {
         stir
         taste
-        addwater
+        add: _water
         # then wonder why this is taking so long
     }
 }
 
-dutchOven(noHeat lidOn) {
-    _blackBean(1/2can) {rinsed}
-    _freshCilantro
-    _lemon(1/4)
+dutchOven(noHeat) {
+    add: _blackBeans(1/2can){rinsed}
+    add: _freshCilantro
+    add: _lemon(1/4)
 }
 
- dish () {
-    _sourCream(noLactose)
-}
+serve: _sourCream(noLactose)
 
-or
-
-get a roti/burrito
-put a grilled sausage slices in it with cilantro fresh and tex mex cheese and sriarcha and then put the burrito filling in yum yum. 
-
-            
-    
+# or get a roti/burrito, put grilled sausage slices in it
+# with fresh cilantro, tex mex cheese, sriracha, and the
+# rice filling. yum yum.
