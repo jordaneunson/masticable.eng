@@ -1,0 +1,97 @@
+#!/bin/gastro
+# Servings: 2
+# Time: 45mins
+# Difficulty: medium
+# DASH: low sodium, plant-forward, heart-healthy
+# Shopping: pickled beets (Love Beets or store brand), tahini (nut butter aisle),
+#           white miso (Asian foods or refrigerated), spring mix (pre-washed bag)
+
+tahiniDressing() {
+    _tahini(2tbsp)
+    _lemonJuice(1.5tbsp){freshSqueezed}
+    _garlic(1clove){minced or grated}
+    _water(2tbsp){to thin}
+    _blackPepper{to taste}
+    # Whisk together — should be pourable but not watery
+}
+
+misoVinaigrette() {
+    _whiteMiso(1tsp)           # keep it light — sodium adds up fast
+    _riceVinegar(2tbsp)
+    _sesameOil(1tsp)
+    _honey(1tsp)
+    _ginger(1tsp){freshGrated}
+    _water(1tbsp){to thin}
+    # Whisk until miso fully dissolves
+}
+
+seedCrunch() {
+    _pumpkinSeeds(2tbsp)
+    _sunflowerSeeds(2tbsp)
+}
+
+# ── BARLEY (start first — takes longest) ──────────────────────────────────
+
+mediumPot(mediumHeat) {
+    add: _pearledBarley(3/4cup)
+    add: _lowSodiumVegetableStock(2cups)
+    simmer: 30mins{untilTender, stockAbsorbed}
+    # If stock absorbs before barley is done, add water a splash at a time
+}
+
+mediumPot(noHeat) {
+    add: _oliveOil(1tbsp)
+    add: _lemonZest(1tsp)
+    add: _freshParsley(generous){chopped}
+    add: _blackPepper{to taste}
+    stir: gently
+}
+
+# ── SQUASH (roast while barley cooks) ─────────────────────────────────────
+
+prepCounter(noHeat) {
+    _butternutSquash(1/2 medium){cubed, 3/4inch}
+    toss: _butternutSquash, _oliveOil(1tbsp), _cumin(1/2tsp), _cinnamon(pinch), _blackPepper
+}
+
+bakingPan(400F) {
+    add: _butternutSquash{seasoned, single layer}
+    roast: 25mins{untilCaramelizedAndTender}
+    # Flip halfway if you remember
+}
+
+# ── BROCCOLINI ─────────────────────────────────────────────────────────────
+
+largePot(highHeat, boilingWater) {
+    add: _broccolini(1bunch)
+    blanch: 2mins
+    drain
+    # Shock in cold water immediately — keeps it bright green
+}
+
+prepCounter(noHeat) {
+    add: _broccolini{shocked, drained}
+    dress: tahiniDressing()
+}
+
+# ── SEED CRUNCH ────────────────────────────────────────────────────────────
+
+smallFryPan(mediumHeat) {
+    add: seedCrunch()
+    toast: 3-4mins{stirringOften}{untilGoldenAndFragrant}
+    # Watch closely — seeds go from golden to burnt fast
+    remove
+}
+
+# ── ASSEMBLY ───────────────────────────────────────────────────────────────
+
+bowl {
+    layer: _herbedBarley
+    add: _springMix(handful)
+    add: _roastedButternutSquash
+    add: _tahiniDressedBroccolini
+    add: _pickledBeets(generous){jarred, drained}
+    add: seedCrunch(){toasted}
+    drizzle: misoVinaigrette()
+    # Everything stays in its own zone — don't toss, let them mix as you eat
+}
