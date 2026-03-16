@@ -5,8 +5,9 @@
 # DASH: plant-based, high fiber, no added salt
 
 mediumPot(highHeat, boilingWater) {
-    add: _brownRice(1cup)
-    cook: 25-30mins{perPackageDirections}
+    add: _farro(1cup)
+    # Farro: ~25mins, nutty and chewy — holds up well under toppings
+    simmer: 25mins{untilTender}
     drain
 }
 
@@ -20,7 +21,7 @@ prepCounter(noHeat) {
 }
 
 bowl {
-    layer: _brownRice
+    layer: _farro
     add: _blackBeans
     add: _avocado
     add: _salsa

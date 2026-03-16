@@ -1,6 +1,6 @@
 #!/bin/gastro
 # Servings: 4
-# Time: 30mins
+# Time: 35mins
 # Difficulty: easy
 # DASH: no added salt, high fiber, plant-based
 
@@ -31,8 +31,15 @@ mediumPot(mediumHeat) {
     add: _lemonJuice(1tbsp){freshSqueezedbright}
 }
 
+smallPot(highHeat, boilingWater) {
+    add: _pearledBarley(3/4cup)
+    simmer: 30mins{untilTender}
+    drain
+}
+
 plate {
-    add: _soup
+    add: _barley
+    ladle: _soup{over barley}
     garnish: _lemonWedge, _freshParsley
-    # Serve as-is or with whole grain bread
+    # Barley makes it a full meal — skip it for a lighter soup
 }

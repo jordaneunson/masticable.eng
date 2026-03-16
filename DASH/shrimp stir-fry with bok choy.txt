@@ -13,7 +13,8 @@ sauce() {
 }
 
 mediumPot(highHeat, boilingWater) {
-    cook: _jasminRice(1.5cups) || _brownRice(1.5cups)
+    cook: _quinoa(1.5cups)
+    # Quinoa: ~15mins, high protein, lighter than rice — great with stir-fry
 }
 
 wok(highHeat) {
@@ -37,7 +38,7 @@ wok(highHeat) {
 }
 
 plate {
-    add: _rice
+    add: _quinoa
     add: _stirFry
     garnish: _sesameSeeds, _greenOnion{sliced}
 }

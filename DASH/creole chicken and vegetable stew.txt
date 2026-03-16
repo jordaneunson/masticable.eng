@@ -53,12 +53,15 @@ dutchOven(noHeat) {
 }
 
 mediumPot(highHeat, boilingWater) {
-    cook: _brownRice
+    add: _pearledBarley(1cup)
+    # Barley: ~30mins simmering, chewy and hearty
+    simmer: 30mins{untilTender}
+    drain: excess water
 }
 
 plate {
-    add: _brownRice
-    ladle: _stew{over rice}
+    add: _barley
+    ladle: _stew{over barley}
     garnish: _greenOnion{sliced}, _freshParsley
     # Hot sauce on the side for the bold
 }
