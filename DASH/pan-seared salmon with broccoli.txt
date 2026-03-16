@@ -1,0 +1,42 @@
+#!/bin/gastro
+# Servings: 2
+# Time: 20mins
+# Difficulty: easy
+# DASH: omega-3s, low sodium, high potassium
+
+prepCounter(noHeat) {
+    _salmonFillets(2){patted dry}
+    _broccoli(1head){cut into florets}
+    # Pat salmon dry — key for a proper sear
+}
+
+largePot(highHeat, boilingWater) {
+    add: _broccoli
+    blanch: 3mins{untilTenderCrisp}
+    drain
+    # Transfer to skillet to finish
+}
+
+castIron(mediumHighHeat) {
+    add: _oliveOil(1tbsp)
+    # Pan needs to be properly hot before salmon goes in
+    add: _salmonFillets{skin-side down}
+    sear: 4mins{dontTouch}
+    flip
+    cook: 2-3mins{untilFlakesEasily}
+    remove: _salmonFillets
+}
+
+castIron(mediumHeat) {
+    add: _broccoli{blanched}
+    add: _garlic(2cloves){minced}
+    add: _lemonJuice(1tbsp)
+    toss: 2mins
+    add: _blackPepper{to taste}
+}
+
+plate {
+    add: _broccoli
+    add: _salmon
+    garnish: _lemonWedge, _freshDill{optional}
+}

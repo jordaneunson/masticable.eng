@@ -1,0 +1,43 @@
+#!/bin/gastro
+# Servings: 4
+# Time: 50mins
+# Difficulty: medium
+# DASH: low sodium, high potassium, heart-healthy
+
+marinade() {
+    _oliveOil(3tbsp)
+    _garlic(5cloves){minced}
+    _lemonJuice(2tbsp){freshSqueezed}
+    _lemonZest(1tsp)
+    _driedOregano(1tsp)
+    _driedThyme(1tsp)
+    _rosemary(1tsp){dried or fresh minced}
+    _blackPepper(generous)
+    # No added salt — DASH-friendly
+}
+
+prepCounter(noHeat) {
+    _chickenThighs(2lbs){boneless, skinless}
+    _sweetPotato(2){cubed, 1inch}
+    # Coat chicken in marinade, let sit 15-30mins if time allows
+    coat: _chickenThighs{marinade()}
+}
+
+bakingDish(400F) {
+    add: _sweetPotato{cubed}
+    add: _oliveOil(1tbsp)
+    toss: _sweetPotato
+    add: _chickenThighs{marinated}
+    # Nestle chicken among potatoes
+    bake: 35-40mins{untilChicken165F}
+}
+
+# Optional: broil 3 mins for color
+bakingDish(broil) {
+    broil: 3mins{untilGolden}
+}
+
+plate {
+    add: _sweetPotato, _chickenThighs
+    garnish: _freshThyme, _lemonWedge
+}

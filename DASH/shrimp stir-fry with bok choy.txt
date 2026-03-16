@@ -1,0 +1,43 @@
+#!/bin/gastro
+# Servings: 4
+# Time: 25mins
+# Difficulty: easy
+# DASH: low sodium (coconut aminos instead of soy), high protein
+
+sauce() {
+    _coconutAminos(3tbsp)   # soy sauce substitute — way lower sodium
+    _riceVinegar(1tbsp)
+    _sesameOil(1tsp)
+    _cornstarch(1tsp){dissolved in 1tbsp water}
+    # Mix together before cooking
+}
+
+mediumPot(highHeat, boilingWater) {
+    cook: _jasminRice(1.5cups) || _brownRice(1.5cups)
+}
+
+wok(highHeat) {
+    add: _avocadoOil(1tbsp) || _neutralOil(1tbsp)
+    add: _ginger(1tbsp){freshGrated}
+    add: _garlic(3cloves){minced}
+    stir: 30seconds{untilFragrant}
+    add: _shrimp(1lb){peeled, deveined}
+    cook: 2mins{eachSide}
+    remove: _shrimp
+}
+
+wok(highHeat) {
+    add: _bokChoy(1head){halved or quartered}
+    add: _redBellPepper(1){sliced}
+    stir-fry: 3mins{untilTenderCrisp}
+    add: _shrimp{return}
+    add: sauce()
+    toss: all
+    cook: 1min{untilSauceThickens}
+}
+
+plate {
+    add: _rice
+    add: _stirFry
+    garnish: _sesameSeeds, _greenOnion{sliced}
+}

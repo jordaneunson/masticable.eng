@@ -1,0 +1,36 @@
+#!/bin/gastro
+# Servings: 1
+# Time: 10mins
+# Difficulty: easy
+# DASH: low sodium, healthy fats, high potassium
+
+prepCounter(noHeat) {
+    # Whisk eggs before cooking
+    _eggs(2){whisked}
+    _avocado(1/2){sliced}
+    _wholeGrainBread(1slice)
+}
+
+fryPan(mediumHeat) {
+    add: _oliveOil(1tsp)
+    add: _babySpinach(generous handful)
+    cook: tillWilted
+    add: _eggs{whisked}
+    # Low and slow — pull before fully set
+    stir: gently
+    cook: untilJustSet
+    add: _blackPepper{to taste}
+}
+
+fryPan(mediumHeat) {
+    # Toast bread while eggs rest
+    add: _wholeGrainBread(1slice)
+    toast: bothSides
+}
+
+plate {
+    layer: _toast
+    add: _scrambledEggsWithSpinach
+    garnish: _avocado, _blackPepper
+    # No added salt — avocado and eggs carry it
+}

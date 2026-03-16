@@ -1,0 +1,29 @@
+#!/bin/gastro
+# Servings: 1
+# Time: 10mins
+# Difficulty: easy
+# DASH: omega-3s, no added salt, high potassium
+
+dressing() {
+    _oliveOil(2tbsp)
+    _lemonJuice(1.5tbsp){freshSqueezed}
+    _dryMustard(pinch)
+    _blackPepper{to taste}
+    # Whisk to emulsify
+}
+
+prepCounter(noHeat) {
+    _mixedGreens(big handful)
+    _cucumber(1/2){sliced}
+    _cherryTomatoes(handful){halved}
+    _redOnion(thin slices)
+    _cannedSalmon(5oz){noSaltAdded, drained, flaked}
+    _avocado(1/2){sliced}
+}
+
+bowl {
+    toss: _mixedGreens, _cucumber, _cherryTomatoes, _redOnion, dressing()
+    add: _salmon{flaked}
+    garnish: _avocado, _lemonWedge
+    # No croutons needed — salmon and avocado make it substantial
+}

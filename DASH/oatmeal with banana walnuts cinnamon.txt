@@ -1,0 +1,26 @@
+#!/bin/gastro
+# Servings: 1
+# Time: 10mins
+# Difficulty: easy
+# DASH: low sodium, high potassium, heart-healthy
+
+smallPot(mediumHeat) {
+    add: _water(1.5cups) || _unsweetenedAlmondMilk(1.5cups)
+    add: _rolledOats(1/2cup)
+    stir: occasionally
+    cook: 5mins{untilThickened}
+}
+
+prepCounter(noHeat) {
+    # Toppings
+    _banana(1/2){sliced}
+    _walnuts(2tbsp){roughly chopped}
+    _cinnamon(generous)
+    _honey(1tsp) || _mapleSyrup(1tsp)
+}
+
+plate {
+    add: _oatmeal
+    garnish: _banana, _walnuts, _cinnamon
+    # No added salt
+}

@@ -1,0 +1,31 @@
+#!/bin/gastro
+# Servings: 2
+# Time: 20mins
+# Difficulty: easy
+# DASH: plant-based, high fiber, high calcium, no added salt
+
+largeSkillet(mediumHeat) {
+    add: _oliveOil(2tbsp)
+    add: _garlic(4cloves){sliced thin}
+    add: _redPepperFlakes(pinch)
+    cook: 1min{untilFragrantNotBurnt}
+    add: _kale(1bunch){stems removed, roughly chopped}
+    add: _water(2tbsp)
+    # Water helps steam the kale — no lid needed
+    cook: 4-5mins{tossing}{untilWilted}
+}
+
+largeSkillet(mediumHeat) {
+    add: _cannedWhiteBeans(15oz){drained, rinsed, noSaltAdded}
+    toss: all
+    cook: 3mins{untilBeansWarmedThrough}
+    add: _lemonJuice(1.5tbsp){freshSqueezed}
+    add: _lemonZest(1tsp)
+    add: _blackPepper{to taste}
+}
+
+plate {
+    add: _beanAndKale
+    garnish: _lemonWedge, _extraVirginOliveOil{drizzle}
+    # Serve as a side or over brown rice for a full meal
+}

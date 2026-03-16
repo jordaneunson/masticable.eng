@@ -1,0 +1,64 @@
+#!/bin/gastro
+# Servings: 6
+# Time: 1hr 15mins
+# Difficulty: medium
+# DASH: no roux, low sodium, high fiber — the "gumbo fix"
+# Note: file powder added off-heat only — boiling it makes gumbo bitter
+
+theTrinity() {
+    _onion(1){diced}
+    _celery(3stalks){diced}
+    _greenBellPepper(1){diced}
+}
+
+spices() {
+    _paprika(1tsp)
+    _cayenne(1/4tsp){to taste — more if u want heat}
+    _thyme(1tsp){dried}
+    _oregano(1tsp){dried}
+    _blackPepper(generous)
+}
+
+dutchOven(mediumHighHeat) {
+    add: _oliveOil(2tbsp)
+    add: theTrinity()
+    fry: 8mins{tillSoftAndSlightlyCaramelized}
+    add: _garlic(5cloves){minced}
+    stir: 1min
+    add: spices()
+    stir: 1min{toastSpices}
+}
+
+dutchOven(mediumHeat) {
+    add: _cannedDicedTomatoes(28oz){noSaltAdded}
+    add: _lowSodiumChickenStock(4cups)
+    add: _chickenThighs(2lbs){boneless, skinless, cutIntoChunks}
+    add: _bayLeaf(2)
+    stir: all
+    simmer: 30mins
+}
+
+dutchOven(mediumLowHeat) {
+    add: _okra(2cups){sliced, fresh or frozen}
+    simmer: 15mins{untilChickenTender, okraSoftened}
+    remove: _bayLeaf
+    # File powder goes in OFF heat — it thickens and adds flavor
+    # Boiling it makes it stringy and bitter
+}
+
+dutchOven(noHeat) {
+    add: _filePowder(1tsp)
+    stir: gently
+    # Taste and adjust — more cayenne if it needs fire
+}
+
+mediumPot(highHeat, boilingWater) {
+    cook: _brownRice
+}
+
+plate {
+    add: _brownRice
+    ladle: _stew{over rice}
+    garnish: _greenOnion{sliced}, _freshParsley
+    # Hot sauce on the side for the bold
+}

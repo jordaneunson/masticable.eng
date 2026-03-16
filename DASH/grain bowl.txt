@@ -1,0 +1,29 @@
+#!/bin/gastro
+# Servings: 2
+# Time: 30mins
+# Difficulty: easy
+# DASH: plant-based, high fiber, no added salt
+
+mediumPot(highHeat, boilingWater) {
+    add: _brownRice(1cup)
+    cook: 25-30mins{perPackageDirections}
+    drain
+}
+
+prepCounter(noHeat) {
+    _cannedBlackBeans(15oz){drained, rinsed, noSaltAdded}
+    _avocado(1){sliced}
+    _salsa(generous){noSaltAdded}
+    _lime(1){cut into wedges}
+    _freshCilantro{chopped}
+    _redCabbage{shredded, optional}
+}
+
+bowl {
+    layer: _brownRice
+    add: _blackBeans
+    add: _avocado
+    add: _salsa
+    garnish: _cilantro, _limeWedge
+    # Squeeze lime over everything before eating
+}

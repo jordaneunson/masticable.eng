@@ -1,0 +1,38 @@
+#!/bin/gastro
+# Servings: 4
+# Time: 30mins
+# Difficulty: easy
+# DASH: no added salt, high fiber, plant-based
+
+mediumPot(mediumHeat) {
+    add: _oliveOil(1tbsp)
+    add: _onion(1){diced}
+    add: _garlic(4cloves){minced}
+    fry: tillSoft
+    add: _cumin(1.5tsp)
+    add: _smockedPaprika(1tsp)
+    stir: 1min{toastSpices}
+}
+
+mediumPot(mediumHighHeat) {
+    add: _cannedDicedTomatoes(14oz){noSaltAdded}
+    add: _cannedLentils(2x15oz){drained, rinsed}
+    add: _lowSodiumVegetableBroth(3cups)
+    add: _bayLeaf(1)
+    stir: all
+    simmer: 15mins
+}
+
+mediumPot(mediumHeat) {
+    add: _babySpinach(2cups)
+    stir: tillWilted
+    remove: _bayLeaf
+    add: _blackPepper{to taste}
+    add: _lemonJuice(1tbsp){freshSqueezedbright}
+}
+
+plate {
+    add: _soup
+    garnish: _lemonWedge, _freshParsley
+    # Serve as-is or with whole grain bread
+}
