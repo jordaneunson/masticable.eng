@@ -1,5 +1,5 @@
 {
-  "recipes": [
+  "root": [
     "bolognase.txt",
     "braised_shortrib.txt",
     "brocencheese risotes.txt",
@@ -37,17 +37,19 @@
     "veggie Ramen.txt",
     "white bean potato lentil chili.txt"
   ],
-  "DASH": [
-    "DASH/cascade bowl.txt",
-    "DASH/chicken thighs with garlic lemon herbs and sweet potato.txt",
-    "DASH/creole chicken and vegetable stew.txt",
-    "DASH/grain bowl.txt",
-    "DASH/lentil soup.txt",
-    "DASH/oatmeal with banana walnuts cinnamon.txt",
-    "DASH/pan-seared salmon with broccoli.txt",
-    "DASH/salmon salad with olive oil lemon.txt",
-    "DASH/scrambled eggs with spinach and avocado on toast.txt",
-    "DASH/shrimp stir-fry with bok choy.txt",
-    "DASH/white bean and kale saute.txt"
-  ]
+  "folders": {
+    "DASH": [
+      "cascade bowl.txt",
+      "chicken thighs with garlic lemon herbs and sweet potato.txt",
+      "creole chicken and vegetable stew.txt",
+      "grain bowl.txt",
+      "lentil soup.txt",
+      "oatmeal with banana walnuts cinnamon.txt",
+      "pan-seared salmon with broccoli.txt",
+      "salmon salad with olive oil lemon.txt",
+      "scrambled eggs with spinach and avocado on toast.txt",
+      "shrimp stir-fry with bok choy.txt",
+      "white bean and kale saute.txt"
+    ]
+  }
 }
