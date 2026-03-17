@@ -1,0 +1,58 @@
+#!/bin/gastro
+# Servings: 6
+# Time: 60mins
+# Difficulty: easy
+
+spiceBlend() {
+    _cumin(1tbsp)
+    _coriander(1tsp)
+    _turmeric(1tsp)
+    _blackPepper(1/2tsp)
+    _oregano(1tsp)
+    _cayenne(1/4tsp)
+}
+
+dutchOven(mediumHeat) {
+    add: _oliveOil(2tbsp)
+    add: _onion(1){diced}
+    add: _celery(2stalks){diced}
+    cook: tillSoft
+    add: _garlic(4cloves){minced}
+    add: _ginger(1tbsp){grated}
+    add: _jalapeno(1){seeded, minced}
+    cook: 1min
+}
+
+dutchOven(mediumHeat) {
+    add: spiceBlend()
+    stir: 30seconds
+    # bloom the spices, don't let them burn
+}
+
+dutchOven(highHeat) {
+    add: _greenLentils(1/2cup){rinsed}
+    add: _yukonGoldPotatoes(1lb){cubed}
+    add: _cannedGreenChiles(4oz){diced}
+    add: _cannedTomatoes(14oz){diced, noSaltAdded}
+    add: _water(4cups)
+    # no stock — zero added sodium, season at the table
+    boil
+}
+
+dutchOven(lowHeat, lidOn) {
+    simmer: 35mins
+    # potatoes break down and thicken naturally
+    # lentils should be tender
+}
+
+dutchOven(noHeat) {
+    add: _whiteBeans(2cans){drained, rinsed, noSaltAdded}
+    # cannellini or Great Northern
+    add: _spinach(4cups){fresh}
+    stir: untilWilted
+    add: _limeJuice(2limes)
+}
+
+serve() {
+    garnish: _avocado{sliced}, _pumpkinSeeds{toasted}, _cilantro{fresh}, _limeWedge
+}
